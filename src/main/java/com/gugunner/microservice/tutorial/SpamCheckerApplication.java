@@ -1,4 +1,4 @@
-package com.gugunner.microservice;
+package com.gugunner.microservice.tutorial;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

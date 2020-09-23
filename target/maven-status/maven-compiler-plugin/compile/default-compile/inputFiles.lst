@@ -1,2 +1,7 @@
+/Users/raulmacproserver/Documents/Java/first-spring-microservice/src/main/java/com/gugunner/microservice/ControlFlow.java
+/Users/raulmacproserver/Documents/Java/first-spring-microservice/src/main/java/com/gugunner/microservice/SpamAppConfig.java
+/Users/raulmacproserver/Documents/Java/first-spring-microservice/src/main/java/com/gugunner/microservice/SpamDetector.java
 /Users/raulmacproserver/Documents/Java/first-spring-microservice/src/main/java/com/gugunner/microservice/SimpleSpamDetector.java
 /Users/raulmacproserver/Documents/Java/first-spring-microservice/src/main/java/com/gugunner/microservice/SpamCheckerApplication.java
+/Users/raulmacproserver/Documents/Java/first-spring-microservice/src/main/java/com/gugunner/microservice/RemoteSpamDetector.java
+/Users/raulmacproserver/Documents/Java/first-spring-microservice/src/main/java/com/gugunner/microservice/SpamDetectorFactory.java

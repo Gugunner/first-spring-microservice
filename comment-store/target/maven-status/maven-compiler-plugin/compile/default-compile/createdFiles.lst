@@ -1,0 +1,4 @@
+com/gugunner/microservice/spring/model/Comment.class
+com/gugunner/microservice/spring/boot/CommentStoreApp.class
+com/gugunner/microservice/spring/service/CommentsService.class
+com/gugunner/microservice/spring/service/CommentRepository.class

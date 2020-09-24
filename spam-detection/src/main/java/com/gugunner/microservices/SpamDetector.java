@@ -1,4 +1,4 @@
-package com.gugunner.microservice.tutorial;
+package com.gugunner.microservices;
 
 public interface SpamDetector {
     boolean containsSpam(String vale);

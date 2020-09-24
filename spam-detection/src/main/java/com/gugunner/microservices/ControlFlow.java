@@ -1,4 +1,4 @@
-package com.gugunner.microservice.tutorial;
+package com.gugunner.microservices;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;

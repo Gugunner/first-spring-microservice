@@ -1,4 +1,4 @@
-package com.gugunner.microservice.tutorial;
+package com.gugunner.microservices;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -13,8 +13,8 @@ import java.util.List;
 
 //We use @ComoponentScan to scan all classes with @Component to add them as beans in this Configuration Object
 // We no longer need to explicitly declare the beans in the config object
-//@Configuration
-//@ComponentScan
+@Configuration
+@ComponentScan
 public class SpamAppConfig {
 //    @Bean
 //    public SpamDetector simpleSpamDetector(@Value("${sbb.spamwords.filename}") String filename) throws IOException {

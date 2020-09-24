@@ -1,4 +1,4 @@
-package com.gugunner.microservice.tutorial;
+package com.gugunner.microservices;
 
 import java.io.IOException;
 
@@ -10,8 +10,6 @@ public class SpamDetectorFactory {
 //            spamWords = Files.readAllLines(Paths.get(args[1]));
             return new SimpleSpamDetector(args[1]);
         }
-    return new RemoteSpamDetector(args[0], args[1], args[2]);
+        return new RemoteSpamDetector(args[0], args[1], args[2]);
     }
-
-
 }

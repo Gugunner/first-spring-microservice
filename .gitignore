@@ -23,6 +23,7 @@
 hs_err_pid*
 
 *.xml
-target/*
+target/classes
 
 *.iml
+

@@ -1,4 +1,4 @@
-package com.gugunner.microservice.tutorial;
+package com.gugunner.microservices;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

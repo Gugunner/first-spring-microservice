@@ -1,4 +1,4 @@
-package com.gugunner.microservice.tutorial;
+package com.gugunner.microservices;
 
 //@Service
 public class RemoteSpamDetector implements SpamDetector {

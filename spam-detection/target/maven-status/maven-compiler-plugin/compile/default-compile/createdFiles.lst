@@ -1,0 +1,7 @@
+com/gugunner/microservices/SpamDetector.class
+com/gugunner/microservices/SpamCheckerApplication.class
+com/gugunner/microservices/SpamDetectorFactory.class
+com/gugunner/microservices/SpamAppConfig.class
+com/gugunner/microservices/ControlFlow.class
+com/gugunner/microservices/SimpleSpamDetector.class
+com/gugunner/microservices/RemoteSpamDetector.class

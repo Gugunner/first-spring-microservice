@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
-@RestController
+//@RestController
 public class ReadController {
 
     private static final Logger log = LoggerFactory.getLogger(ReadController.class);

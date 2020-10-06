@@ -1,8 +1,0 @@
-/Users/raulmacproserver/Documents/Java/first-spring-microservice/first-spring-microservice/comment-store/src/main/java/com/gugunner/microservices/WebSecurityConfiguration.java
-/Users/raulmacproserver/Documents/Java/first-spring-microservice/first-spring-microservice/comment-store/src/main/java/com/gugunner/microservices/model/Comment.java
-/Users/raulmacproserver/Documents/Java/first-spring-microservice/first-spring-microservice/comment-store/src/main/java/com/gugunner/microservices/restapi/WriteController.java
-/Users/raulmacproserver/Documents/Java/first-spring-microservice/first-spring-microservice/comment-store/src/main/java/com/gugunner/microservices/service/CommentsServiceImpl.java
-/Users/raulmacproserver/Documents/Java/first-spring-microservice/first-spring-microservice/comment-store/src/main/java/com/gugunner/microservices/CommentStoreApp.java
-/Users/raulmacproserver/Documents/Java/first-spring-microservice/first-spring-microservice/comment-store/src/main/java/com/gugunner/microservices/restapi/ReadController.java
-/Users/raulmacproserver/Documents/Java/first-spring-microservice/first-spring-microservice/comment-store/src/main/java/com/gugunner/microservices/service/CommentRepository.java
-/Users/raulmacproserver/Documents/Java/first-spring-microservice/first-spring-microservice/comment-store/src/main/java/com/gugunner/microservices/service/CommentsService.java

@@ -3,6 +3,8 @@ package com.gugunner.microservices;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.gugunner.microservices.restapi.CreateComment;
+import com.gugunner.microservices.restapi.ReadComment;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
@@ -16,13 +18,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.logging.Filter;
 
-@RestController
+//@RestController
 @SpringBootApplication
 @EnableTransactionManagement
-//@ComponentScan(basePackages = {"com.gugunner.microservices"})
 @EntityScan(basePackages = {"com.gugunner.microservices"})
-@EnableSpringDataWebSupport
-//@ImportResource(value = {"classpath*:legacy-context.xml"})
+//@EnableSpringDataWebSupport
 public class CommentStoreApp {
     /**
      *
@@ -33,52 +33,22 @@ public class CommentStoreApp {
         SpringApplication.run(CommentStoreApp.class, args);
     }
 
-    @RequestMapping("/")
-    String home() {
-        return "Hello world!";
+    @Bean
+    CreateComment createCommentFunction() {
+        return new CreateComment();
     }
 
-    //This is a basic redirection
-//    @RequestMapping(value = "/", method = RequestMethod.GET)
-//    public ModelAndView method() {
-//        return new ModelAndView("redirect:" + "/home");
-//    }
+    @Bean
+    ReadComment readCommentFunction() {
+        return new ReadComment();
+    }
 
-    //Second way to override Jackson ObjectMapper instead of using application properties
+//    /**
+//     * Maps the commons logging Filter to all requests; done by spring boot
+//     * @return
+//     */
 //    @Bean
-//    @Primary
-//    public ObjectMapper initObjectMapper() {
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        objectMapper.setPropertyNamingStrategy(PropertyNamingStrategy.SNAKE_CASE);
-//        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-//        objectMapper.registerModule(new JavaTimeModule());
-//        return objectMapper;
+//    public Filter initRequestContextLoggingFilter() {
+//        return new RequestContextLoggingFilter();
 //    }
-
-    //Third way to use Jackson2ObjectMapperBuilder from Spring
-
-    /**
-     *
-     * @param builder
-     * @return
-     */
-    @Bean
-    @Primary
-    public ObjectMapper objectMapper(Jackson2ObjectMapperBuilder builder) {
-        ObjectMapper objectMapper = builder
-                .failOnUnknownProperties(false)
-                .propertyNamingStrategy(PropertyNamingStrategy.SNAKE_CASE)
-                .featuresToDisable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS)
-                .build();
-        return objectMapper;
-    }
-
-    /**
-     * Maps the commons logging Filter to all requests; done by spring boot
-     * @return
-     */
-    @Bean
-    public Filter initRequestContextLoggingFilter() {
-        return new RequestContextLoggingFilter();
-    }
 }

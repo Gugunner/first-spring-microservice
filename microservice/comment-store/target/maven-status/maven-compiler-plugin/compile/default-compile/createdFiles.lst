@@ -1,8 +1,0 @@
-com/gugunner/microservices/restapi/WriteController.class
-com/gugunner/microservices/WebSecurityConfiguration.class
-com/gugunner/microservices/model/Comment.class
-com/gugunner/microservices/service/CommentRepository.class
-com/gugunner/microservices/service/CommentsService.class
-com/gugunner/microservices/service/CommentsServiceImpl.class
-com/gugunner/microservices/restapi/ReadController.class
-com/gugunner/microservices/CommentStoreApp.class

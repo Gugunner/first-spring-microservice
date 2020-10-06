@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@Controller
+//@Controller
 public class WriteController {
 
     @Autowired
